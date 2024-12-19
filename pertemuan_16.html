@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: lightskyblue;
+        }
+        h2 {
+            color: rgb(14, 14, 13);
+        }
+        button {
+            background-color: gray;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+    <title>Dialog Confirm javaScript</title>
+    <script type="text/javascript">
+        function showConfirm() {
+            var result = confirm("Press a button!");
+            if (result) {
+                alert("You pressed OK!");
+            } else {
+                alert("You pressed Cancel!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <center>
+    <h2>Selamat Datang di Dunia Coding!</h2>
+    <button onclick="showConfirm()">Let's Go</button>
+    </center>
+</body>
+</html>
